@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.TC_OO1_Login">
+      <class name="AdminTestCases.TC_AP_001">
         <methods>
-          <include name="TC_OO1_Login"/>
+          <include name="TC_AP_001"/>
         </methods>
-      </class> <!-- TestCases.TC_OO1_Login -->
+      </class> <!-- AdminTestCases.TC_AP_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
