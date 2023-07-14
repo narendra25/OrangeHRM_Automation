@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class TestBase {
 	public static WebDriver driver; //Rename WebDriver name to driver
@@ -28,11 +29,20 @@ public class TestBase {
 		try {
 			prop.load(fileinput);
 		}catch(IOException e) {
-			
+			e.printStackTrace();
 		}
 	}
-	
-	
+	//Open The Browser
+	public static void OpenBrowser() {
+		driver=new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get(prop.getProperty("URL"));
+	}
+	//Close The Browser
+	public static void CloseBrowser() {
+		driver.quit();
+	}
 	
 
 }
