@@ -33,14 +33,14 @@ public class TestBase {
 		}
 	}
 	//Open The Browser
-	public static void OpenBrowser() {
+	public void OpenBrowser() {
 		driver=new ChromeDriver();
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.get(prop.getProperty("URL"));
 	}
 	//Close The Browser
-	public static void CloseBrowser() {
+	public void CloseBrowser() {
 		driver.quit();
 	}
 	
