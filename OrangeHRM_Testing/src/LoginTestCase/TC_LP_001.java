@@ -1,14 +1,14 @@
-package TestCases;
+package LoginTestCase;
 
 import org.testng.annotations.Test;
 
 import PageObjects.LoginPageObjects;
 import TestBase.TestBase;
 
-public class TC_002_Login extends TestBase {
+public class TC_LP_001 extends TestBase{
 	LoginPageObjects LPO;
 	@Test(priority=2)
-	public void TC_002_Login() throws InterruptedException {
+	public void TC_OO1_Login() throws InterruptedException {
 		LPO=new LoginPageObjects();
 		LPO.OpenBrowser();
 		Thread.sleep(4000);
@@ -19,5 +19,4 @@ public class TC_002_Login extends TestBase {
 		LPO.Click_On_Login_Button();
 		LPO.CloseBrowser();
 	}
-
 }
