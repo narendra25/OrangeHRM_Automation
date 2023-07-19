@@ -88,5 +88,7 @@
 	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/selenium-java-4.10.0/lib/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/selenium-java-4.10.0/lib/slf4j-api-2.0.7.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/poi-src-5.2.3-20220909.tgz"/>
+	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/commons-io-2.13.0-bin.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
