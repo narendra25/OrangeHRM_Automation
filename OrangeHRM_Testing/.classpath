@@ -125,5 +125,14 @@
 	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/jar_files (1)/stax-api-1.0.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/jar_files (1)/xml-apis-1.0.b2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/na21279/Downloads/jar_files (1)/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/na21279/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0.jar" sourcepath="C:/Users/na21279/.m2/repository/org/seleniumhq/selenium/selenium-support/4.10.0/selenium-support-4.10.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
+			<attribute name="maven.artifactId" value="selenium-support"/>
+			<attribute name="maven.version" value="4.10.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
