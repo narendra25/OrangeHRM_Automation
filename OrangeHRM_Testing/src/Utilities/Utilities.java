@@ -7,6 +7,7 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 
+import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -15,8 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeClass;
-
+import org.openqa.selenium.support.ui.Wait;
 import com.google.common.io.Files;
 
 import TestBase.TestBase;
@@ -55,8 +55,8 @@ public static WebElement WaitForElementPresent(WebDriver driver,By locator,int t
 	wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	return driver.findElement(locator);
 }
-public static WebElement WaitForFluentWait(WebDriver driver ,final By locator) {
-	Wait<WebElement>wait1=new FluentWait<WebDriver>(driver)
+public static void WaitForFluentWait(WebDriver driver ,final By locator) {
+	Wait<WebDriver>wait1=new FluentWait<WebDriver>(driver)
 			.withTimeout(Duration.ofSeconds(30))
 			.pollingEvery(Duration.ofSeconds(2))
 			.ignoring(NoSuchElementException.class);
